@@ -3,85 +3,606 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanaji Chowdhury - Portfolio</title>
+    <title>Tanaji's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <h4>Tanaji Chowdhury</h4>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<body class="light-mode">
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>Tanaji Chowdhury</span></h1>
-            <p>A passionate software developer with expertise in web development and machine learning.</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">TANAJI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Your existing hero content -->
+            <h3 class="intro">Hello, It's Me</h3>
+            <h1 class="name">Tanaji Chowdhury</h1>
+            <h3 class="role">And I'm a <span class="typewriter"></span></h3>
+            <div class="hero-description">
+                <p class="description-1">Building seamless web and mobile experiences with modern technologies</p>
+                <p class="description-2">I build amazing websites with clean and efficient code</p>
+            </div>
+
+            <a href="#projects" class="btn pulse">View My Work</a>
+
+            <div class="social-links" data-aos="fade-up">
+                <a href="https://github.com/21tanaji"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tanaji21/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_tanajii_21_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/tanaji21"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <!-- Add this circular image container -->
+        <div class="hero-image">
+            <img src="assets/images/profile.jpg" alt="Tanaji Chowdhury">
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
+        <h1 data-aos="fade-down">About Me</h1>
         <div class="about-content">
-            <img src="assets/images/profile.jpg" alt="Tanaji Chowdhury">
-            <p>
-                Hi, I'm Tanaji Chowdhury, a Computer Science graduate with a passion for building scalable web applications
-                and solving real-world problems through code. I specialize in full-stack development and have experience
-                with React, Node.js, and MongoDB.
-            </p>
+            <div class="about-img" data-aos="fade-right">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/images/AboutMePic.jpg" alt="Tanaji Chowdhury" width="380" height="380">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Tanaji Chowdhury</h3>
+                            <p>Full Stack Developer</p>
+                            <p>ASP.NET Specialist</p>
+                            <p>Web Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <div class="professional-bio">
+                    <!-- Education First -->
+                    <div class="education-highlight">
+                        <p><strong>Recent Computer Science Graduate</strong> from Ahasanullah University of Science & Technology, where I:</p>
+                        <ul class="graduation-list">
+                            <li>Earned B.Sc. with hands-on project experience</li>
+                            <li>Built strong foundations in software engineering</li>
+                            <li>Developed passion for problem-solving through code</li>
+                        </ul>
+                    </div>
+
+                    <!-- Professional Experience -->
+                    <div class="experience-section">
+                        <p>As a <strong>Junior Programmer at Genuine Technology & Research (GTR)</strong> for 6 months, I:</p>
+                        <ul class="contributions">
+                            <li>Developed mission-critical ERP modules with ASP.NET MVC</li>
+                            <li>Architected scalable backend systems for inventory/HR</li>
+                            <li>Implemented secure role-based access controls</li>
+                            <li>Optimized SQL queries (40% faster report generation)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Design Passion -->
+                    <div class="design-passion">
+                        <p>My current focus is web development where I combine:</p>
+                        <ul class="skill-blend">
+                            <li>Modern design aesthetics with functional UX principles</li>
+                            <li>Frontend development craftsmanship</li>
+                            <li>User-centered interface design</li>
+                        </ul>
+                    </div>
+
+                    <!-- Research & Interests -->
+                    <div class="research-section">
+                        <h4>Academic & Research Pursuits</h4>
+                        <ul class="research-highlights">
+                            <li>Published computer vision research (international journal)</li>
+                            <li>Active interest in ML/DL and computer vision</li>
+                            <li>Open-source contributor and IoT enthusiast</li>
+                        </ul>
+                    </div>
+
+                    <p class="signature-statement">What drives me is turning complex problems into elegant solutions - whether debugging firmware or crafting pixel-perfect UIs. This blend of creative design, technical execution, and research gives me a unique perspective in development.</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 data-aos="fade-down">My Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-bar">
+                        <p>C/C++ <span>90%</span></p>
+                        <div class="bar-container">
+                            <div class="bar cpp" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>Java <span>85%</span></p>
+                        <div class="bar-container">
+                            <div class="bar java" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>JavaScript <span>88%</span></p>
+                        <div class="bar-container">
+                            <div class="bar js" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skill-bar">
+                        <p>HTML/CSS <span>95%</span></p>
+                        <div class="bar-container">
+                            <div class="bar html" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>ASP.NET MVC <span>92%</span></p>
+                        <div class="bar-container">
+                            <div class="bar dotnet" data-width="92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>PHP <span>80%</span></p>
+                        <div class="bar-container">
+                            <div class="bar php" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-bar">
+                        <p>MySQL <span>90%</span></p>
+                        <div class="bar-container">
+                            <div class="bar mysql" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>MS SQL <span>88%</span></p>
+                        <div class="bar-container">
+                            <div class="bar mssql" data-width="88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-brain"></i> AI/Research</h3>
+                    <div class="skill-bar">
+                        <p>Computer Vision <span>85%</span></p>
+                        <div class="bar-container">
+                            <div class="bar cv" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>Machine Learning <span>83%</span></p>
+                        <div class="bar-container">
+                            <div class="bar ml" data-width="83%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar">
+                        <p>Deep Learning <span>80%</span></p>
+                        <div class="bar-container">
+                            <div class="bar dl" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="assets/images/project1.jpg" alt="Project 1">
-                <h3>E-Commerce Platform</h3>
-                <p>A full-stack e-commerce website with user authentication, product management, and payment integration.</p>
-                <a href="https://github.com/yourusername/ecommerce-platform" class="btn">GitHub</a>
-                <a href="https://ecommerce-platform-demo.com" class="btn">Live Demo</a>
+        <h2 data-aos="fade-down">My Projects</h2>
+
+        <!-- Personal Projects -->
+        <div class="project-category" data-aos="fade-up">
+            <h3><i class="fas fa-laptop-code"></i> Personal Projects</h3>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/portfolio.png" alt="Personal Portfolio">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>Personal Portfolio</h3>
+                                <div class="tech-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Java Script</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Personal Portfolio</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Home</li>
+                                <li><i class="fas fa-check-circle"></i> About Me</li>
+                                <li><i class="fas fa-check-circle"></i> Skill</li>
+                                <li><i class="fas fa-check-circle"></i> My Projects</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/Portfolio" class="btn">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/HMS.png" alt="Hotel Management System">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>Hotel Management</h3>
+                                <div class="tech-tags">
+                                    <span>ASP.NET Core</span>
+                                    <span>SQL Server</span>
+                                    <span>HTML</span>
+                                    <span>C#</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Hotel Management</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Authentication Module</li>
+                                <li><i class="fas fa-check-circle"></i> Room Management Module</li>
+                                <li><i class="fas fa-check-circle"></i> Housekeeping Module</li>
+                                <li><i class="fas fa-check-circle"></i> Staff Management Module (Admin only)</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/Hotel-Management-System" class="btn">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/images/project2.jpg" alt="Project 2">
-                <h3>Task Manager App</h3>
-                <p>A mobile app for managing tasks with reminders, due dates, and priority levels.</p>
-                <a href="https://github.com/yourusername/task-manager" class="btn">GitHub</a>
-                <a href="https://task-manager-demo.com" class="btn">Live Demo</a>
+        </div>
+
+        <!-- Academic Projects -->
+        <div class="project-category" data-aos="fade-up">
+            <h3><i class="fas fa-graduation-cap"></i> Academic Projects</h3>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/P1.png" alt="SiTEaRa's Battlegrounds">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>SiTEaRa's Battlegrounds</h3>
+                                <div class="tech-tags">
+                                    <span>C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>SiTEaRa's Battlegrounds</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Action-Indie Survival Game</li>
+                                <li><i class="fas fa-check-circle"></i> Animated</li>
+                                <li><i class="fas fa-check-circle"></i> Attractive Background</li>
+                                <li><i class="fas fa-check-circle"></i> Immersive Environment</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/SiTEaRa-s-Battlegrounds" class="btn">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/p2.png" alt="3D Music System">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>3D Music System</h3>
+                                <div class="tech-tags">
+                                    <span>HTML</span>
+                                    <span>JavaScript</span>
+                                    <span>CSS</span>
+                                    <span>Graphics</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>3D Music System</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> 3D Audio Visualizer</li>
+                                <li><i class="fas fa-check-circle"></i> Virtual Concert Stage</li>
+                                <li><i class="fas fa-check-circle"></i> Interactive Music Controls</li>
+                                <li><i class="fas fa-check-circle"></i> Immersive Environment</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/3D-Music-System" class="btn">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/p3.png" alt="Hotel Management">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>Hotel Management</h3>
+                                <div class="tech-tags">
+                                    <span>Java Swing</span>
+                                    <span>MS SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Hotel Management</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Authentication Module</li>
+                                <li><i class="fas fa-check-circle"></i> Room Management Module</li>
+                                <li><i class="fas fa-check-circle"></i> Housekeeping Module</li>
+                                <li><i class="fas fa-check-circle"></i> Staff Management Module (Admin only)</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/Hotel-Management" class="btn">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/p4.jpg" alt="HELPio">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>HELPio</h3>
+                                <div class="tech-tags">
+                                    <span>Java</span>
+                                    <span>MS SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>HELPio</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Authentication & User Management Module</li>
+                                <li><i class="fas fa-check-circle"></i> Service Request Module</li>
+                                <li><i class="fas fa-check-circle"></i> Service Provider Management Module</li>
+                                <li><i class="fas fa-check-circle"></i> Payment & Billing Module</li>
+                                <li><i class="fas fa-check-circle"></i> Admin Dashboard Module</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/HELPio" class="btn">View Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/p5.png" alt="Expert Assists">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>Expert Assists</h3>
+                                <div class="tech-tags">
+                                    <span>Java Script</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Expert Assists</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Authentication & User Management Module</li>
+                                <li><i class="fas fa-check-circle"></i> Service Request Module</li>
+                                <li><i class="fas fa-check-circle"></i> Service Provider Management Module</li>
+                                <li><i class="fas fa-check-circle"></i> Payment & Billing Module</li>
+                                <li><i class="fas fa-check-circle"></i> Admin Dashboard Module</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/Expert-Assists" class="btn">View the Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/p6.jpg" alt="Toll Management System with RFID">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>Toll Management System with RFID</h3>
+                                <div class="tech-tags">
+                                    <span>RFID Reader</span>
+                                    <span>Microcontroller (Arduino)</span>
+                                    <span>Servo Motor </span>
+                                    <span>LCD Display</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Toll Management System with RFID</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> RFID-Based Vehicle Detection</li>
+                                <li><i class="fas fa-check-circle"></i> Microcontroller Processing</li>
+                                <li><i class="fas fa-check-circle"></i> Inventory Control</li>
+                            </ul>
+                            <a href="https://github.com/21tanaji/Toll-Collection-with-RFID" class="btn">View the Site</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Professional Projects -->
+        <div class="project-category" data-aos="fade-up">
+            <h3><i class="fas fa-briefcase"></i> Professional Projects</h3>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/erp.jpg" alt="CUFL ERP System" class="project-image">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>CUFL ERP System</h3>
+                                <div class="tech-tags">
+                                    <span>ASP.NET Core</span>
+                                    <span>SQL Server</span>
+                                    <span>MVC</span>
+                                    <span>Entity Framework</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>CUFL ERP System</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> HR Management</li>
+                                <li><i class="fas fa-check-circle"></i> Payroll Processing</li>
+                                <li><i class="fas fa-check-circle"></i> Inventory Control</li>
+                                <li><i class="fas fa-check-circle"></i> Sales Modules</li>
+                                <li><i class="fas fa-check-circle"></i> Account Modules</li>
+                            </ul>
+                            <a href="https://gtrbd.net/cufl" class="btn">View the Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="project-image-container">
+                                <img src="assets/images/dap.png" alt="DAP ERP System">
+                            </div>
+                            <div class="minimal-content">
+                                <h3>DAP ERP System</h3>
+                                <div class="tech-tags">
+                                    <span>ASP.NET Core</span>
+                                    <span>SQL Server</span>
+                                    <span>MVC</span>
+                                    <span>Entity Framework</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>DAP ERP System</h3>
+                            <ul class="module-list">
+                                <li><i class="fas fa-check-circle"></i> Employee Management</li>
+                                <li><i class="fas fa-check-circle"></i> Payroll Processing</li>
+                                <li><i class="fas fa-check-circle"></i> Inventory Control</li>
+                            </ul>
+                            <a href="https://gtrbd.net/daperp" class="btn">View the Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2 data-aos="fade-down">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card" data-aos="zoom-in">
+                <h3><i class="fas fa-certificate"></i> Azure: create a REST API using NodeJS Serverless Functions</h3>
+                <p>Coursera | 2025</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                <h3><i class="fas fa-certificate"></i> Create a Project Charter with Google Docs</h3>
+                <p>Coursera | 2025</p>
+            </div>
+            <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3><i class="fas fa-certificate"></i> Search Engine Optimization (SEO) with Squarespace</h3>
+                <p>Coursera | 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume">
+        <div class="resume-container" data-aos="fade-up">
+            <h2>Download My Resume</h2>
+            <p>Get a comprehensive overview of my skills and experience</p>
+            <a href="Tanaji-Chowdhury-Resume.pdf" class="resume-btn" download>
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+            
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <h2 data-aos="fade-down">Get In Touch</h2>
+        <form action="https://formsubmit.co/tanajichowdhury99@gmail.com" method="POST">
+            <!-- Add a hidden input for the subject -->
+            <input type="hidden" name="_subject" value="New contact from portfolio">
+            <!-- Add other form fields -->
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn pulse">Send Message</button>
         </form>
+        <!--<div class="social-links" data-aos="fade-up">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>-->
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 TanajiChowdhury. All rights reserved.</p>
+        <p>&copy; 2025 Tanaji21. All Rights Reserved.</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
