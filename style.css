@@ -1023,22 +1023,82 @@ input:checked + .slider {
 }*/
 @media (max-width: 768px) {
     nav {
-        padding: 15px 20px;
+        padding: 12px 20px;
+        height: 70px;
     }
 
     .nav-links {
+        position: fixed;
         top: 70px;
+        left: -100%;
+        width: 100%;
         height: calc(100vh - 70px);
-        gap: 25px;
+        background: var(--nav-bg);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+        padding-top: 30px;
+        transition: left 0.3s ease;
+        overflow-y: auto;
     }
 
+        .nav-links.active {
+            left: 0;
+        }
+
+        .nav-links li {
+            width: 100%;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+            .nav-links li a {
+                display: block;
+                padding: 8px 0;
+                font-size: 1.1rem;
+                width: 100%;
+            }
+
     .burger {
-        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+        .burger i {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .burger.toggle i {
+            transform: rotate(90deg);
+            color: var(--primary-color);
+        }
+
+    .theme-switch {
+        margin: 25px auto 15px;
+        order: 1;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        z-index: 1001;
+    }
+
+    /* Smooth scroll fix */
+    html {
+        scroll-padding-top: 70px;
     }
 }
 
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .hero {
         padding: 100px 20px 50px;
         text-align: center;
@@ -1054,6 +1114,28 @@ input:checked + .slider {
 
     .hero-description {
         margin-bottom: 1.5rem;
+    }
+}*/
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+        order: 1;
     }
 }
 
